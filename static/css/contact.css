@@ -1,0 +1,68 @@
+
+/* Contenedor principal */
+
+body > div {
+    background: linear-gradient(145deg, #141414, #101010);
+    padding: 50px 60px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+body > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Título */
+
+h2 {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Texto */
+
+p {
+    font-size: 15px;
+    color: #bcbcbc;
+}
+
+/* Links estilo consistente con tu nav */
+
+a {
+    text-decoration: none;
+    color: #dcdcdc;
+    position: relative;
+    margin-left: 10px;
+    font-weight: 400;
+    transition: color .25s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: width .3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}

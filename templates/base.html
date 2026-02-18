@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else "Portfolio - Tu Nombre" }}</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="/" data-section="inicio">Home</a>
+    <a href="/about" data-section="about">About</a>
+    <a href="/skills" data-section="skills">Skills</a>
+    <a href="/projects" data-section="projects">Projects</a>
+
+</nav>
+
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

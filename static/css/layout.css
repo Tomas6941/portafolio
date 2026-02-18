@@ -1,0 +1,11 @@
+.all {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}

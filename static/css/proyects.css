@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #0e0e0e;
+    color: #dcdcdc;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px 80px 20px;
+}
+
+/* CARD */
+
+.card {
+    width: 320px;
+    padding: 28px;
+    background: #141414;
+    border-radius: 14px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    transition: transform .3s ease, box-shadow .3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+/* TITLES */
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+/* DESCRIPTION */
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bcbcbc;
+}
+
+/* LINK STYLE (igual lógica que nav) */
+
+.card a {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #dcdcdc;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color .25s ease;
+}
+
+.card a:hover {
+    color: #ffffff;
+}
+
+.card a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: width .3s ease;
+}
+
+.card a:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .projects {
+        gap: 25px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

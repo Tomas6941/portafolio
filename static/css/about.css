@@ -1,0 +1,11 @@
+.content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #bcbcbc;
+    line-height: 1.7;
+    border-radius: 14px;
+    background: #141414;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
