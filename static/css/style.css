@@ -234,7 +234,7 @@ section { padding: 120px 64px; }
   font-family: 'Geist Mono', monospace;
   font-size: 0.66rem;
   letter-spacing: 0.14em;
-  color: var(--text-dim);
+  color: var(--text-muted);
   margin-bottom: 14px;
 }
 
@@ -300,7 +300,7 @@ section { padding: 120px 64px; }
   font-family: 'Geist Mono', monospace;
   font-size: 0.62rem;
   letter-spacing: 0.1em;
-  color: var(--text-dim);
+  color: var(--text-muted);
 }
 
 #skills { background: var(--bg); }
@@ -407,7 +407,7 @@ section { padding: 120px 64px; }
   font-family: 'Geist Mono', monospace;
   font-size: 0.62rem;
   letter-spacing: 0.12em;
-  color: var(--text-dim);
+  color: var(--text-muted);
   margin-bottom: 10px;
 }
 
@@ -439,7 +439,7 @@ section { padding: 120px 64px; }
   font-family: 'Geist Mono', monospace;
   font-size: 0.6rem;
   letter-spacing: 0.06em;
-  color: var(--text-dim);
+  color: var(--text-muted);
   background: var(--bg2);
 }
 
@@ -508,7 +508,7 @@ section { padding: 120px 64px; }
 }
 
 .contact-link-item:hover .contact-link-name { color: var(--accent-pale); }
-.contact-link-arrow { font-size: 0.8rem; color: var(--text-dim); }
+.contact-link-arrow { font-size: 0.8rem; color: var(--text-muted); }
 
 .contact-form {
   display: flex;
