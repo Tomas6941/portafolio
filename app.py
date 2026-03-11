@@ -8,7 +8,7 @@ projects = [
         "title": "SaaS de Inmobiliaria",
         "description": "Plataforma web para una inmobiliaria con catálogo de propiedades y formulario de contacto. Panel administrativo para gestionar propiedades, etc.",
         "tags": ["HTML5", "CSS3", "JavaScript"],
-        "type": "Frontend",
+        "type": "Full Stack",
         "emoji": "🏠",
         "url": "https://github.com/Tomas6941/pinmobiliaria",
         "color": "#4F8A6A"
@@ -28,7 +28,7 @@ projects = [
         "title": "Barbería Elite",
         "description": "Sitio web para una barbería con sistema de reserva de turnos y panel de administración.",
         "tags": ["HTML5", "CSS3", "JavaScript"],
-        "type": "Frontend",
+        "type": "Full Stack",
         "emoji": "✂️",
         "url": "https://github.com/Tomas6941/pbarberia",
         "color": "#8B5E3C"
