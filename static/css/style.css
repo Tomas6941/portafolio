@@ -66,7 +66,7 @@ nav.scrolled { border-bottom-color: var(--border-soft); }
   font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
-  color: var(--text);
+  color: var(--text-muted);
   text-decoration: none;
   transition: color 0.15s;
 }
