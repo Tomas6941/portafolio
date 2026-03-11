@@ -5,8 +5,8 @@ app = Flask(__name__)
 projects = [
     {
         "id": 1,
-        "title": "PIN Inmobiliaria",
-        "description": "Plataforma web para una inmobiliaria con catálogo de propiedades y formulario de contacto.",
+        "title": "SaaS de Inmobiliaria",
+        "description": "Plataforma web para una inmobiliaria con catálogo de propiedades y formulario de contacto. Panel administrativo para gestionar propiedades, etc.",
         "tags": ["HTML5", "CSS3", "JavaScript"],
         "type": "Frontend",
         "emoji": "🏠",
@@ -15,7 +15,7 @@ projects = [
     },
     {
         "id": 2,
-        "title": "PDental",
+        "title": "Clinica Dental",
         "description": "Sitio web para clínica dental con sistema de reserva de turnos y panel de administración.",
         "tags": ["Python", "Flask", "HTML5", "CSS3"],
         "type": "Full Stack",
@@ -26,7 +26,7 @@ projects = [
     {
         "id": 3,
         "title": "Barbería Elite",
-        "description": "Landing page para una barbería con flujo de reservas y contacto directo por WhatsApp.",
+        "description": "Sitio web para una barbería con sistema de reserva de turnos y panel de administración.",
         "tags": ["HTML5", "CSS3", "JavaScript"],
         "type": "Frontend",
         "emoji": "✂️",
@@ -36,7 +36,7 @@ projects = [
     {
         "id": 4,
         "title": "Concesionaria",
-        "description": "Aplicación web para concesionaria de vehículos con sistema de contacto por email configurable.",
+        "description": "Aplicación web para concesionaria de vehículos, incluye panel administrativo para gestionar catalogo, etc.",
         "tags": ["Python", "Flask", "HTML5", "CSS3"],
         "type": "Full Stack",
         "emoji": "🚗",
