@@ -7,39 +7,53 @@
   <meta name="description" content="Desarrollador Full Stack Junior. Python, Flask, HTML, CSS, Tailwind, MySQL, MongoDB." />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
+
 <body>
 
+<header>
   <!-- NAV -->
-  <nav>
+  <nav aria-label="Navegación principal">
     <a class="nav-logo" href="#hero">T<span>.</span>dev</a>
     <ul class="nav-links">
-      <li><a href="#hero">Presentacion</a></li>
-      <li><a href="#skills">Tecnologias</a></li>
+      <li><a href="#hero">Presentación</a></li>
+      <li><a href="#skills">Tecnologías</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Formulario</a></li>
     </ul>
   </nav>
+</header>
+
+<main>
 
   <!-- HERO -->
   <section id="hero">
     <div class="hero-content">
       <div class="hero-tag">Desarrollador Full Stack Junior · Argentina</div>
+
       <h1 class="hero-title">
         Hola, soy<br>
         <em>Tomás.</em>
         <span class="line2">Construyo la web.</span>
       </h1>
+
       <p class="hero-description">
         Desarrollador con pasión por crear experiencias digitales reales.
         Backend con Python y Flask, frontend con HTML, CSS y Tailwind.
         Empezando a los 16 años con proyectos concretos y muchas ganas de crecer.
       </p>
+
       <div class="hero-cta">
-        <a href="#projects" class="btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn-outline">Contactarme</a>
+        <a href="#projects" class="btn-primary" aria-label="Ver proyectos del portfolio">
+          Ver proyectos
+        </a>
+
+        <a href="#contact" class="btn-outline" aria-label="Ir al formulario de contacto">
+          Contactarme
+        </a>
       </div>
     </div>
-    <div class="hero-scroll-hint">
+
+    <div class="hero-scroll-hint" aria-hidden="true">
       <div class="scroll-line"></div>
       Scroll
     </div>
@@ -48,41 +62,55 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="section-label">Sobre mí</div>
-    <h2 class="section-title">Un dev que construye<br>cosas reales.</h2>
+
+    <h2 class="section-title">
+      Un dev que construye<br>cosas reales.
+    </h2>
+
     <div class="about-grid">
+
       <div class="about-text reveal">
         <p>
           Tengo <strong>16 años</strong> y soy desarrollador Full Stack Junior con base en Argentina.
           Desde temprano me apasionó la programación como herramienta para resolver problemas reales.
         </p>
+
         <p>
           Me especializo en el <strong>stack Python + Flask</strong> para el backend y
           <strong>HTML, CSS, Tailwind CSS</strong> para el frontend.
-          También trabajo con bases de datos relacionales y NoSQL: <strong>MySQL y MongoDB</strong>.
+          También trabajo con bases de datos relacionales y NoSQL:
+          <strong>MySQL y MongoDB</strong>.
         </p>
+
         <p>
           Completé cursos de Python básico, Python para desarrollo web,
           HTML y CSS, y desarrollo de aplicaciones con IA.
           Cada proyecto que ves aquí fue construido desde cero por mí.
         </p>
       </div>
+
       <div class="about-stats reveal" data-delay="150">
+
         <div class="stat-card">
           <div class="stat-number">4+</div>
           <div class="stat-label">Proyectos completados</div>
         </div>
+
         <div class="stat-card">
           <div class="stat-number">5+</div>
           <div class="stat-label">Cursos realizados</div>
         </div>
+
         <div class="stat-card">
           <div class="stat-number">2</div>
           <div class="stat-label">Apps Flask en producción</div>
         </div>
+
         <div class="stat-card">
           <div class="stat-number">16</div>
           <div class="stat-label">Años, ya trabajando</div>
         </div>
+
       </div>
     </div>
   </section>
@@ -91,17 +119,23 @@
   <section id="skills">
     <div class="section-label">Tecnologías</div>
     <h2 class="section-title">Mi stack.</h2>
+
     <div class="skills-grid">
+
       {% for category, items in skills.items() %}
       <div class="skill-category reveal" data-delay="{{ loop.index0 * 80 }}">
+
         <div class="skill-cat-title">{{ category }}</div>
+
         <div class="skill-tags">
           {% for skill in items %}
           <span class="skill-tag">{{ skill }}</span>
           {% endfor %}
         </div>
+
       </div>
       {% endfor %}
+
     </div>
   </section>
 
@@ -109,90 +143,144 @@
   <section id="projects">
     <div class="section-label">Proyectos</div>
     <h2 class="section-title">Lo que construí.</h2>
+
     <div class="projects-grid">
+
       {% for project in projects %}
       <a
         class="project-card reveal"
         href="{{ project.url }}"
         target="_blank"
         rel="noopener"
+        aria-label="Ver proyecto {{ project.title }} en GitHub"
         data-delay="{{ loop.index0 % 2 * 120 }}"
       >
+
         <span class="project-emoji">{{ project.emoji }}</span>
         <div class="project-type">{{ project.type }}</div>
+
         <h3 class="project-title">{{ project.title }}</h3>
+
         <p class="project-desc">{{ project.description }}</p>
+
         <div class="project-tags">
           {% for tag in project.tags %}
           <span class="project-tag">{{ tag }}</span>
           {% endfor %}
         </div>
+
         <div class="project-link">
           Ver en GitHub
           <span class="project-link-arrow">→</span>
         </div>
+
       </a>
       {% endfor %}
+
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
+
     <div class="section-label">Contacto</div>
     <h2 class="section-title">Hablemos.</h2>
+
     <div class="contact-wrapper">
+
       <div>
+
         <div class="contact-text reveal">
           <p>
             Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales remotas.
             Si tenés un proyecto en mente o querés trabajar juntos, escribime.
           </p>
         </div>
+
         <div class="contact-links reveal" data-delay="100">
-          <a class="contact-link-item" href="https://github.com/Tomas6941" target="_blank" rel="noopener">
+
+          <a class="contact-link-item"
+             href="https://github.com/Tomas6941"
+             target="_blank"
+             rel="noopener"
+             aria-label="Perfil de GitHub de Tomás">
+
             <span class="contact-link-name">GitHub</span>
             <span class="contact-link-arrow">↗</span>
+
           </a>
-          <a class="contact-link-item" href="https://www.linkedin.com/in/tomas-gonzalez-724518307/" target="_blank" rel="noopener">
+
+          <a class="contact-link-item"
+             href="https://www.linkedin.com/in/tomas-gonzalez-724518307/"
+             target="_blank"
+             rel="noopener"
+             aria-label="Perfil de LinkedIn de Tomás">
+
             <span class="contact-link-name">LinkedIn</span>
             <span class="contact-link-arrow">↗</span>
+
           </a>
-          <a class="contact-link-item" href="mailto:tg4263340@gmail.com">
+
+          <a class="contact-link-item"
+             href="mailto:tg4263340@gmail.com"
+             aria-label="Enviar email a Tomás">
+
             <span class="contact-link-name">Email</span>
             <span class="contact-link-arrow">↗</span>
+
           </a>
+
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contact-form" data-delay="200">
+      <form class="contact-form reveal"
+            id="contact-form"
+            action="#"
+            method="post"
+            data-delay="200">
+
         <div class="form-field">
           <label for="name">Nombre</label>
           <input type="text" id="name" name="name" placeholder="Tu nombre" required />
         </div>
+
         <div class="form-field">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="tu@email.com" required />
         </div>
+
         <div class="form-field">
           <label for="message">Mensaje</label>
           <textarea id="message" name="message" placeholder="Contame tu proyecto o propuesta..." required></textarea>
         </div>
+
         <button type="submit" class="form-submit">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+
+          <svg aria-hidden="true"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="currentColor"
+               style="width:16px;height:16px;flex-shrink:0">
+
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207"/>
           </svg>
+
           Enviar por WhatsApp
+
         </button>
       </form>
+
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p class="footer-copy">© 2025 <span>Tomás</span> — Full Stack Developer</p>
-    <p class="footer-made">Hecho con Python <span style="color:var(--accent)">+</span> Flask</p>
-  </footer>
+</main>
 
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<footer>
+  <p class="footer-copy">© 2025 <span>Tomás</span> — Full Stack Developer</p>
+  <p class="footer-made">Hecho con Python <span style="color:var(--accent)">+</span> Flask</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>
