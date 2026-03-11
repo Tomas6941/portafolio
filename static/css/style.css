@@ -71,7 +71,7 @@ nav.scrolled { border-bottom-color: var(--border-soft); }
   transition: color 0.15s;
 }
 
-.nav-links a:hover { color: var(--accent-pale); }
+.nav-links a:hover { color: var(--white); }
 
 #hero {
   min-height: 100vh;
