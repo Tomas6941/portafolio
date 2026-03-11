@@ -9,11 +9,11 @@
   --border:      #2a3347;
   --border-soft: #1a2236;
   --text:        #e2e8f0;
-  --text-muted:  #64748b;
-  --text-dim:    #334155;
+  --text-muted:  #94a3b8;
+  --text-dim:    #64748b;
   --accent:      #2563eb;
   --accent-hi:   #3b82f6;
-  --accent-pale: #bfdbfe;
+  --accent-pale: #dbeafe;
   --accent-glow: rgba(37, 99, 235, 0.15);
   --white:       #f1f5f9;
 }
