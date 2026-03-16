@@ -1,7 +1,5 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
-
 projects = [
     {
         "id": 1,
@@ -11,7 +9,8 @@ projects = [
         "type": "Full Stack",
         "emoji": "🏠",
         "url": "https://github.com/Tomas6941/pinmobiliaria",
-        "color": "#4F8A6A"
+        "color": "#4F8A6A",
+        "demo_url": ""
     },
     {
         "id": 2,
@@ -21,7 +20,8 @@ projects = [
         "type": "Full Stack",
         "emoji": "🦷",
         "url": "https://github.com/Tomas6941/pdental",
-        "color": "#4A7FA5"
+        "color": "#4A7FA5",
+        "demo_url": ""
     },
     {
         "id": 3,
@@ -31,7 +31,8 @@ projects = [
         "type": "Full Stack",
         "emoji": "✂️",
         "url": "https://github.com/Tomas6941/pbarberia",
-        "color": "#8B5E3C"
+        "color": "#8B5E3C",
+        "demo_url": ""
     },
     {
         "id": 4,
@@ -41,20 +42,18 @@ projects = [
         "type": "Full Stack",
         "emoji": "🚗",
         "url": "https://github.com/Tomas6941/concesionaria",
-        "color": "#7A5FA5"
+        "color": "#7A5FA5",
+        "demo_url": ""
     },
 ]
-
 skills = {
     "Backend": ["Python", "Flask"],
     "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
     "Bases de datos": ["MySQL", "MongoDB"],
     "Herramientas": ["Git", "GitHub", "VS Code"],
 }
-
 @app.route("/")
 def index():
     return render_template("index.html", projects=projects, skills=skills)
-
 if __name__ == "__main__":
     app.run(debug=True)
