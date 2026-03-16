@@ -10,7 +10,7 @@ projects = [
         "emoji": "🏠",
         "url": "https://github.com/Tomas6941/pinmobiliaria",
         "color": "#4F8A6A",
-        "demo_url": ""
+        "demo_url": "https://proyectoinmobiliaria-demo.vercel.app/"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@ projects = [
         "emoji": "🦷",
         "url": "https://github.com/Tomas6941/pdental",
         "color": "#4A7FA5",
-        "demo_url": ""
+        "demo_url": "https://proyectoodontologo-demo.vercel.app/"
     },
     {
         "id": 3,
@@ -32,7 +32,7 @@ projects = [
         "emoji": "✂️",
         "url": "https://github.com/Tomas6941/pbarberia",
         "color": "#8B5E3C",
-        "demo_url": ""
+        "demo_url": "https://proyectobarberia-demo.vercel.app/"
     },
     {
         "id": 4,
@@ -43,7 +43,7 @@ projects = [
         "emoji": "🚗",
         "url": "https://github.com/Tomas6941/concesionaria",
         "color": "#7A5FA5",
-        "demo_url": ""
+        "demo_url": "https://proyectoconcesionaria-demo.vercel.app/"
     },
 ]
 skills = {
