@@ -1,296 +1,349 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tomás — Full Stack Developer</title>
   <meta name="description" content="Desarrollador Full Stack Junior. Python, Flask, HTML, CSS, Tailwind, MySQL, MongoDB." />
+  <meta property="og:title" content="Tomás — Full Stack Developer" />
+  <meta property="og:description" content="Desarrollador Full Stack Junior especializado en Python, Flask y desarrollo web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tomas6941.github.io/portafolio/" />
+  <meta property="og:image" content="{{ og_image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
-
 <body>
 
-<header>
-  <nav aria-label="Navegación principal">
-    <a class="nav-logo" href="#hero">T<span>.</span>dev</a>
-    <ul class="nav-links">
-        <li><a href="#hero" aria-current="page">Presentación</a></li>
-        <li><a href="#skills">Tecnologías</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Formulario</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-<main>
-
-  <section id="hero">
-    <div class="hero-content">
-      <div class="hero-tag">Desarrollador Full Stack Junior · Argentina</div>
-
-      <h1 class="hero-title">
-        Hola, soy<br>
-        <em>Tomás.</em>
-        <span class="line2">Construyo la web.</span>
-      </h1>
-
-      <p class="hero-description">
-        Desarrollador con pasión por crear experiencias digitales reales.
-        Backend con Python y Flask, frontend con HTML, CSS y Tailwind.
-        Empezando a los 15 años con proyectos concretos y muchas ganas de crecer.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary" aria-label="Ver proyectos del portfolio">
-          Ver proyectos
-        </a>
-
-        <a href="#contact" class="btn-outline" aria-label="Ir al formulario de contacto">
-          Contactarme
-        </a>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a class="nav-logo" href="#hero">T<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" aria-current="page">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Trabajo</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <svg class="theme-icon-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </div>
+    </nav>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
 
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <div class="scroll-line"></div>
-      Scroll
-    </div>
-  </section>
+  <main>
 
-  <section id="about">
-    <div class="section-label">Sobre mí</div>
-
-    <h2 class="section-title">
-      Un dev que construye<br>cosas reales.
-    </h2>
-
-    <div class="about-grid">
-
-      <div class="about-text reveal">
-        <p>
-          Tengo <strong>15 años</strong> y soy desarrollador Full Stack Junior, soy de Argentina, Córdoba.
-          Desde temprano me apasionó la programación como herramienta para resolver problemas reales.
-        </p>
-
-        <p>
-          Me especializo en el <strong>stack Python + Flask</strong> para el backend y
-          <strong>HTML, CSS, Tailwind CSS</strong> para el frontend.
-          También trabajo con bases de datos relacionales:
-          <strong>MySQL y MongoDB</strong>.
-        </p>
-
-        <p>
-          Completé cursos de Python avanzado, Python para desarrollo web,
-          HTML y CSS, y desarrollo de aplicaciones con IA.
-          Cada proyecto que ves acá fue construido desde cero por mí.
-        </p>
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hola, soy</span>
+            <span class="hero-name">Tomás.</span>
+            <span class="hero-role"><span class="typing-text"></span><span class="typing-cursor">|</span></span>
+          </h1>
+          <p class="hero-desc">
+            Especializado en Python, Flask, HTML, CSS y JavaScript.
+            Construyo aplicaciones web completas desde los 15 años.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">Ver trabajo</a>
+            <a href="#contact" class="btn-outline">Contactar</a>
+            <a href="{{ url_for('static', filename='cv.pdf') }}" class="btn-outline" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-shape"></div>
+        </div>
       </div>
+    </section>
 
-      <div class="about-stats reveal" data-delay="150">
-
-        <div class="stat-card">
-          <div class="stat-number">4+</div>
-          <div class="stat-label">Proyectos completados</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number">5+</div>
-          <div class="stat-label">Cursos realizados</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number">2</div>
-          <div class="stat-label">Apps Flask en producción</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number">16</div>
-          <div class="stat-label">Años, ya trabajando</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-label">Tecnologías</div>
-    <h2 class="section-title">Mi stack.</h2>
-
-    <div class="skills-grid">
-
-      {% for category, items in skills.items() %}
-      <div class="skill-category reveal" data-delay="{{ loop.index0 * 80 }}">
-
-        <div class="skill-cat-title">{{ category }}</div>
-
-        <div class="skill-tags">
-          {% for skill in items %}
-          <span class="skill-tag">{{ skill }}</span>
-          {% endfor %}
-        </div>
-
-      </div>
-      {% endfor %}
-
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="section-label">Proyectos</div>
-    <h2 class="section-title">Lo que construí.</h2>
-
-    <div class="projects-grid">
-
-      {% for project in projects %}
-      <div
-        class="project-card reveal"
-        data-delay="{{ loop.index0 % 2 * 120 }}"
-      >
-
-        <span class="project-emoji">{{ project.emoji }}</span>
-        <div class="project-type">{{ project.type }}</div>
-
-        <h3 class="project-title">{{ project.title }}</h3>
-
-        <p class="project-desc">{{ project.description }}</p>
-
-        <div class="project-tags">
-          {% for tag in project.tags %}
-          <span class="project-tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-
-        <div class="project-actions">
-          <a
-            href="{{ project.url }}"
-            target="_blank"
-            rel="noopener"
-            aria-label="Ver proyecto {{ project.title }} en GitHub"
-            class="project-link"
-          >
-            Ver en GitHub
-            <span class="project-link-arrow">→</span>
-          </a>
-
-          {% if project.demo_url %}
-          <a
-            href="{{ project.demo_url }}"
-            target="_blank"
-            rel="noopener"
-            class="project-link"
-          >
-            Ver demo
-            <span class="project-link-arrow">→</span>
-          </a>
-          {% endif %}
-        </div>
-
-      </div>
-      {% endfor %}
-
-    </div>
-  </section>
-
-  <section id="contact">
-
-    <div class="section-label">Contacto</div>
-    <h2 class="section-title">Hablemos.</h2>
-
-    <div class="contact-wrapper">
-
-      <div>
-
-        <div class="contact-text reveal">
+    <section id="about">
+      <div class="section-number" data-section="01">01</div>
+      <div class="about-inner">
+        <div class="about-text">
+          <div class="section-label">Sobre mí</div>
+          <h2 class="section-title">Un dev que construye cosas reales.</h2>
           <p>
-            Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales remotas.
-            Si tenés un proyecto en mente o querés trabajar juntos, escribime.
+            Tengo 15 años y soy desarrollador Full Stack Junior, de Argentina, Córdoba.
+            Desde temprano me apasionó la programación como herramienta para resolver problemas reales.
+          </p>
+          <p>
+            Me especializo en el stack Python + Flask para el backend y
+            HTML, CSS, Tailwind CSS para el frontend.
+            También trabajo con bases de datos: MySQL y MongoDB.
+          </p>
+          <p>
+            Completé cursos de Python avanzado, Python para desarrollo web,
+            HTML y CSS, y desarrollo de aplicaciones con IA.
           </p>
         </div>
+        <div class="about-sidebar">
+          <div class="about-stats">
+            <div class="stat-row">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Cursos</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Apps Flask</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-num">15</span>
+              <span class="stat-label">Años</span>
+            </div>
+          </div>
 
-        <div class="contact-links reveal" data-delay="100">
-
-          <a class="contact-link-item"
-             href="https://github.com/Tomas6941"
-             target="_blank"
-             rel="noopener"
-             aria-label="Perfil de GitHub de Tomás">
-
-            <span class="contact-link-name">GitHub</span>
-            <span class="contact-link-arrow">↗</span>
-
-          </a>
-
-          <a class="contact-link-item"
-             href="https://www.linkedin.com/in/tomas-gonzalez-724518307/"
-             target="_blank"
-             rel="noopener"
-             aria-label="Perfil de LinkedIn de Tomás">
-
-            <span class="contact-link-name">LinkedIn</span>
-            <span class="contact-link-arrow">↗</span>
-
-          </a>
-
-          <a class="contact-link-item"
-             href="mailto:tg4263340@gmail.com"
-             aria-label="Enviar email a Tomás">
-
-            <span class="contact-link-name">Email</span>
-            <span class="contact-link-arrow">↗</span>
-
-          </a>
-
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="timeline-date">2025</span>
+                <span class="timeline-text">Desarrollo de aplicaciones con IA</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="timeline-date">2024</span>
+                <span class="timeline-text">Python para desarrollo web</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="timeline-date">2024</span>
+                <span class="timeline-text">HTML y CSS — Frontend</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="timeline-date">2023</span>
+                <span class="timeline-text">Python avanzado</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <form class="contact-form reveal"
-            id="contact-form"
-            action="#"
-            method="post"
-            data-delay="200">
-
-        <div class="form-field">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+    <section id="skills">
+      <div class="section-number" data-section="02">02</div>
+      <div class="skills-inner">
+        <div class="skills-header">
+          <div class="section-label">Tecnologías</div>
+          <h2 class="section-title">Stack.</h2>
         </div>
-
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        <div class="skills-grid">
+          {% for category, items in skills.items() %}
+          <div class="skill-group">
+            <span class="skill-cat">{{ category }}</span>
+            <div class="skill-items">
+              {% for skill in items %}
+              <span class="skill-item">{{ skill }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
         </div>
+      </div>
+    </section>
 
-        <div class="form-field">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" placeholder="Contame tu proyecto o propuesta..." required></textarea>
+    <section id="services">
+      <div class="section-number">—</div>
+      <div class="services-inner">
+        <div class="services-header">
+          <div class="section-label">Servicios</div>
+          <h2 class="section-title">Lo que ofrezco.</h2>
         </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">⎔</div>
+            <h3 class="service-title">Desarrollo Web</h3>
+            <p class="service-desc">Aplicaciones web completas con Python, Flask y frontend responsive. De la idea al deploy.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚙</div>
+            <h3 class="service-title">APIs & Backend</h3>
+            <p class="service-desc">APIs REST con Flask, integración con bases de datos MySQL/MongoDB y autenticación.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">◈</div>
+            <h3 class="service-title">Frontend</h3>
+            <p class="service-desc">Maquetación con HTML, CSS y Tailwind. Interfaces limpias, responsive y funcionales.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⎔</div>
+            <h3 class="service-title">Bases de Datos</h3>
+            <p class="service-desc">Diseño e implementación de bases relacionales MySQL y no relacionales MongoDB.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <button type="submit" class="form-submit">
+    <section id="projects">
+      <div class="section-number" data-section="03">03</div>
+      <div class="projects-inner">
+        <div class="projects-header">
+          <div class="section-label">Proyectos</div>
+          <h2 class="section-title">Lo que construí.</h2>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="flask">Flask</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+        <div class="projects-list">
+          {% for project in projects %}
+          {% set tags_lower = project.tags | map('lower') | list %}
+          <article class="project-card" data-tags="{{ tags_lower | join(',') }}">
+            <div class="project-num">{{ "%02d" % loop.index }}</div>
+            <div class="project-content">
+              <div class="project-type">{{ project.type }}</div>
+              <h3 class="project-title">{{ project.title }}</h3>
+              <div class="project-preview">
+                <img src="{{ url_for('static', filename='images/proyecto' ~ loop.index ~ '.png') }}"
+                     alt="Vista previa de {{ project.title }}"
+                     loading="lazy"
+                     width="640"
+                     height="360"
+                     onerror="this.src='{{ url_for('static', filename='images/proyecto' ~ loop.index ~ '.svg') }}'" />
+              </div>
+              <p class="project-desc">{{ project.description }}</p>
+              <div class="project-tags">
+                {% for tag in project.tags %}
+                <span class="project-tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              <div class="project-actions">
+                <a href="{{ project.url }}" target="_blank" rel="noopener" class="project-link">
+                  Código
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                {% if project.demo_url %}
+                <a href="{{ project.demo_url }}" target="_blank" rel="noopener" class="project-link">
+                  Demo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
 
-          <svg aria-hidden="true"
-               xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 24 24"
-               fill="currentColor"
-               style="width:16px;height:16px;flex-shrink:0">
+    <section id="testimonials">
+      <div class="section-number">✦</div>
+      <div class="testimonials-inner">
+        <div class="testimonials-header">
+          <div class="section-label">Testimonios</div>
+          <h2 class="section-title">Lo que dicen.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p class="testimonial-text">"Muy responsable y comprometido con el proyecto. Entregó todo en tiempo y forma."</p>
+            <footer class="testimonial-author">
+              <span class="testimonial-name">Cliente</span>
+              <span class="testimonial-role">Proyecto freelance</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-text">"Demostró una gran capacidad técnica para su edad. Sabe resolver problemas complejos."</p>
+            <footer class="testimonial-author">
+              <span class="testimonial-name">Instructor</span>
+              <span class="testimonial-role">Curso Python avanzado</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-text">"Tiene una visión clara de lo que quiere construir. Es un placer trabajar con él."</p>
+            <footer class="testimonial-author">
+              <span class="testimonial-name">Compañero</span>
+              <span class="testimonial-role">Proyecto colaborativo</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207"/>
-          </svg>
+    <section id="contact">
+      <div class="section-number" data-section="04">04</div>
+      <div class="contact-inner">
+        <div class="contact-info">
+          <div class="section-label">Contacto</div>
+          <h2 class="section-title">Hablemos.</h2>
+          <p class="contact-desc">
+            Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales.
+          </p>
+          <div class="contact-social">
+            <a href="https://github.com/Tomas6941" target="_blank" rel="noopener" class="social-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/tomas-gonzalez-724518307/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+            <a href="mailto:tg4263340@gmail.com" class="social-link">Email</a>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+            <a href="{{ url_for('static', filename='cv.pdf') }}" class="btn-outline" download>Descargar CV</a>
+            <a href="/cv" class="btn-outline" target="_blank">Ver online</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            Enviar
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
 
-          Enviar por WhatsApp
+  </main>
 
-        </button>
-      </form>
+  <footer>
+    <p class="footer-copy">© 2025 <span>Tomás</span></p>
+    <p class="footer-made">Python + Flask</p>
+  </footer>
 
-    </div>
-  </section>
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
-</main>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista previa">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <img class="lightbox-img" src="" alt="" />
+  </div>
 
-<footer>
-  <p class="footer-copy">© 2025 <span>Tomás</span> — Full Stack Developer</p>
-  <p class="footer-made">Hecho con Python <span style="color:var(--accent)">+</span> Flask</p>
-</footer>
-
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>

@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#070708"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#noise)" opacity="0.035" style="mix-blend-mode:overlay"/>
+  <defs>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    </filter>
+  </defs>
+  <text x="80" y="280" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="96" font-weight="800" fill="#ffffff" letter-spacing="-0.04em">Tomás.</text>
+  <text x="80" y="360" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#88889a" letter-spacing="-0.02em">Full Stack Developer</text>
+  <line x1="80" y1="410" x2="360" y2="410" stroke="#1e1e20" stroke-width="2"/>
+  <text x="80" y="460" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="22" font-weight="400" fill="#555566">Python · Flask · HTML · CSS · JavaScript</text>
+</svg>
