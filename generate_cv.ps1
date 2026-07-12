@@ -44,7 +44,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 50 640 Td
-(Trabajo con MySQL y MongoDB. Complete cursos de Python, desarrollo web y aplicaciones con IA.) Tj
+(Trabajo con MySQL, MongoDB y PostgreSQL. Complete cursos de Python, desarrollo web y aplicaciones con IA.) Tj
 ET
 BT
 /F2 11 Tf
@@ -86,7 +86,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 112 560 Td
-(MySQL, MongoDB, SQLite) Tj
+(MySQL, MongoDB, SQLite, PostgreSQL) Tj
 ET
 BT
 /F2 9 Tf
@@ -98,7 +98,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 112 544 Td
-(Git, GitHub, VS Code, OpenCode, Vercel) Tj
+(Git, GitHub, VS Code, OpenCode, Vercel, Linux) Tj
 ET
 BT
 /F2 11 Tf
@@ -188,48 +188,84 @@ BT
 /F2 9 Tf
 0.4 0.4 0.44 rg
 50 274 Td
-(2025) Tj
+(2026) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 102 274 Td
-(Desarrollo de aplicaciones con IA) Tj
+(Ciberseguridad y privacidad) Tj
 ET
 BT
 /F2 9 Tf
 0.4 0.4 0.44 rg
 50 258 Td
-(2024) Tj
+(2026) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 102 258 Td
-(Python para desarrollo web) Tj
+(Seguridad en Internet) Tj
 ET
 BT
 /F2 9 Tf
 0.4 0.4 0.44 rg
 50 242 Td
-(2024) Tj
+(2025) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 102 242 Td
-(HTML y CSS - Frontend) Tj
+(Desarrollo de aplicaciones con IA) Tj
 ET
 BT
 /F2 9 Tf
 0.4 0.4 0.44 rg
 50 226 Td
-(2023) Tj
+(2026) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 102 226 Td
+(PostgreSQL) Tj
+ET
+BT
+/F2 9 Tf
+0.4 0.4 0.44 rg
+50 210 Td
+(2024) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+102 210 Td
+(Python para desarrollo web) Tj
+ET
+BT
+/F2 9 Tf
+0.4 0.4 0.44 rg
+50 194 Td
+(2024) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+102 194 Td
+(HTML y CSS - Frontend) Tj
+ET
+BT
+/F2 9 Tf
+0.4 0.4 0.44 rg
+50 178 Td
+(2023) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+102 178 Td
 (Python avanzado) Tj
 ET
 "@

@@ -57,8 +57,8 @@ projects = [
 skills = {
     "Backend": ["Python", "Flask", "Django"],
     "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
-    "Bases de datos": ["MySQL", "MongoDB", "SQLite"],
-    "Herramientas": ["Git", "GitHub", "VS Code", "OpenCode", "Vercel"],
+    "Bases de datos": ["MySQL", "MongoDB", "SQLite", "PostgreSQL"],
+    "Herramientas": ["Git", "GitHub", "VS Code", "OpenCode", "Vercel", "Linux"],
 }
 @app.route("/")
 def index():
