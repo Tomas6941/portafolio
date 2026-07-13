@@ -56,7 +56,7 @@ projects = [
 ]
 skills = {
     "Backend": ["Python", "Flask", "Django"],
-    "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
+    "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Tkinter", "CustomTkinter"],
     "Bases de datos": ["MySQL", "MongoDB", "SQLite", "PostgreSQL"],
     "Herramientas": ["Git", "GitHub", "VS Code", "OpenCode", "Vercel", "Linux"],
 }
