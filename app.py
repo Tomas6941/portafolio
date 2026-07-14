@@ -53,6 +53,66 @@ projects = [
         "color": "#CC5500",
         "demo_url": "https://fibrolaser.vercel.app/"
     },
+    {
+        "id": 6,
+        "title": "Scanner de Vulnerabilidades Web",
+        "description": "Herramienta de análisis de seguridad web que verifica headers de seguridad, configuración CORS, certificados SSL/TLS y cookies, generando un reporte detallado con puntuación y recomendaciones.",
+        "tags": ["Python", "Flask", "JavaScript"],
+        "type": "Ciberseguridad",
+        "url": "https://github.com/Tomas6941/scanner_vulnerabilidades",
+        "color": "#CC3333",
+        "demo_url": null
+    },
+    {
+        "id": 7,
+        "title": "Dashboard de Auditoría de Seguridad",
+        "description": "Panel administrativo para gestionar auditorías de seguridad de sitios web, con puntuación, historial, recomendaciones priorizadas y exportación de reportes.",
+        "tags": ["Python", "Flask", "PostgreSQL", "JavaScript"],
+        "type": "Ciberseguridad",
+        "url": "https://github.com/Tomas6941/dashboard-auditoria",
+        "color": "#993333",
+        "demo_url": null
+    },
+    {
+        "id": 8,
+        "title": "API REST de Gestión de Inventario",
+        "description": "API RESTful completa para gestionar inventario de productos con autenticación JWT, paginación, filtros, ordenamiento y documentación automática con Swagger.",
+        "tags": ["Python", "Flask", "PostgreSQL"],
+        "type": "API",
+        "url": "https://github.com/Tomas6941/api_inventario",
+        "color": "#336699",
+        "demo_url": null
+    },
+    {
+        "id": 9,
+        "title": "API de Notificaciones Push",
+        "description": "Backend completo para gestionar suscripciones a notificaciones push, envío en tiempo real con WebSocket e historial de notificaciones enviadas.",
+        "tags": ["Python", "Flask", "JavaScript"],
+        "type": "API",
+        "url": "https://github.com/Tomas6941/notificaciones_push",
+        "color": "#339966",
+        "demo_url": null
+    },
+    {
+        "id": 10,
+        "title": "Sistema de Facturación",
+        "description": "Aplicación de escritorio para emitir facturas, gestionar productos y clientes, calcular impuestos y generar reportes de ventas en PDF.",
+        "tags": ["Python", "CustomTkinter", "PostgreSQL"],
+        "type": "Escritorio",
+        "url": "https://github.com/Tomas6941/sistema_facturacion",
+        "color": "#666633",
+        "demo_url": null
+    },
+    {
+        "id": 11,
+        "title": "Gestor de Inventario",
+        "description": "Aplicación de escritorio para gestionar inventario de un negocio con control de stock, alertas de stock mínimo y reportes de movimientos.",
+        "tags": ["Python", "CustomTkinter", "SQLite"],
+        "type": "Escritorio",
+        "url": "https://github.com/Tomas6941/gestor_inventario",
+        "color": "#996633",
+        "demo_url": null
+    },
 ]
 skills = {
     "Backend": ["Python", "Flask", "Django"],

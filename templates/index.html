@@ -257,14 +257,17 @@
         </div>
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="python">Python</button>
           <button class="filter-btn" data-filter="flask">Flask</button>
           <button class="filter-btn" data-filter="javascript">JavaScript</button>
-          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="ciberseguridad">Ciberseguridad</button>
+          <button class="filter-btn" data-filter="api">API</button>
+          <button class="filter-btn" data-filter="escritorio">Escritorio</button>
         </div>
         <div class="projects-list">
           {% for project in projects %}
           {% set tags_lower = project.tags | map('lower') | list %}
-          <article class="project-card" data-tags="{{ tags_lower | join(',') }}">
+          <article class="project-card" data-tags="{{ tags_lower | join(',') }}" data-type="{{ project.type | lower }}">
             <div class="project-num">{{ "%02d" % loop.index }}</div>
             <div class="project-content">
               <div class="project-type">{{ project.type }}</div>

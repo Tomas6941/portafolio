@@ -317,7 +317,8 @@ filterBtns.forEach(btn => {
         card.classList.remove('hidden');
       } else {
         const tags = card.dataset.tags || '';
-        card.classList.toggle('hidden', !tags.includes(filter));
+        const type = card.dataset.type || '';
+        card.classList.toggle('hidden', !tags.includes(filter) && type !== filter);
       }
     });
   });

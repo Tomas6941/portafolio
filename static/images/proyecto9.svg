@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#111113"/>
+  <rect x="1" y="1" width="638" height="358" fill="none" stroke="#1e1e20" stroke-width="1"/>
+  <text x="320" y="200" font-family="Inter, Helvetica, sans-serif" font-size="80" font-weight="700" fill="#555566" text-anchor="middle" dominant-baseline="middle">N</text>
+  <text x="320" y="240" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#555566" text-anchor="middle">Notificaciones Push</text>
+</svg>
