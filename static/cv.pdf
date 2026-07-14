@@ -15,13 +15,13 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<< /Length 2968 >>
+<< /Length 4388 >>
 stream
 BT
 /F2 32 Tf
 0 0 0 rg
 50 770 Td
-(Tomas) Tj
+(Tomas González) Tj
 ET
 BT
 /F1 14 Tf
@@ -48,7 +48,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 50 668 Td
-(Tengo 15 anos y soy desarrollador Full Stack Junior de Cordoba, Argentina.) Tj
+(Tengo 16 años y soy desarrollador Full Stack Junior de Cordoba, Argentina.) Tj
 ET
 BT
 /F1 9 Tf
@@ -60,7 +60,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 50 640 Td
-(Trabajo con MySQL y MongoDB. Complete cursos de Python, desarrollo web y aplicaciones con IA.) Tj
+(Trabajo con MySQL, MongoDB y PostgreSQL. Complete cursos de Python, desarrollo web y aplicaciones con IA.) Tj
 ET
 BT
 /F2 11 Tf
@@ -102,7 +102,7 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 112 560 Td
-(MySQL, MongoDB, SQLite) Tj
+(MySQL, MongoDB, SQLite, PostgreSQL) Tj
 ET
 BT
 /F2 9 Tf
@@ -114,139 +114,211 @@ BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
 112 544 Td
-(Git, GitHub, VS Code, OpenCode, Vercel) Tj
+(Git, GitHub, VS Code, OpenCode, Vercel, Linux) Tj
 ET
 BT
 /F2 11 Tf
 0 0 0 rg
 50 514 Td
-(Proyectos) Tj
+(Experiencia Laboral) Tj
 ET
 BT
 /F2 9 Tf
 0 0 0 rg
 50 494 Td
+(Firox  --  Frontend Developer) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+50 480 Td
+(Abr 2026 - Actualidad | 3 meses) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+50 464 Td
+(Desarrollo de interfaces web con React, Next.js, TypeScript y Tailwind CSS.) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+50 450 Td
+(Construccion de sitios y tiendas online optimizados para rendimiento y conversion.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+50 434 Td
+(React / Next.js / TypeScript / Tailwind CSS) Tj
+ET
+BT
+/F2 11 Tf
+0 0 0 rg
+50 404 Td
+(Proyectos) Tj
+ET
+BT
+/F2 9 Tf
+0 0 0 rg
+50 384 Td
 (SaaS de Inmobiliaria  --  Full Stack) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-65 480 Td
+65 372 Td
 (Plataforma web con catalogo de propiedades y panel administrativo.) Tj
 ET
 BT
 /F1 8 Tf
 0.4 0.4 0.44 rg
-65 466 Td
+65 360 Td
 (HTML5 / CSS3 / JavaScript) Tj
 ET
 BT
 /F2 9 Tf
 0 0 0 rg
-50 446 Td
+50 344 Td
 (Clinica Dental  --  Full Stack) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-65 432 Td
+65 332 Td
 (Sitio web con sistema de reserva de turnos y panel de administracion.) Tj
 ET
 BT
 /F1 8 Tf
 0.4 0.4 0.44 rg
-65 418 Td
+65 320 Td
 (Python / Flask / HTML5 / CSS3) Tj
 ET
 BT
 /F2 9 Tf
 0 0 0 rg
-50 398 Td
+50 304 Td
 (Barberia Elite  --  Full Stack) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-65 384 Td
+65 292 Td
 (Sitio web con sistema de reserva de turnos y panel de administracion.) Tj
 ET
 BT
 /F1 8 Tf
 0.4 0.4 0.44 rg
-65 370 Td
+65 280 Td
 (HTML5 / CSS3 / JavaScript) Tj
 ET
 BT
 /F2 9 Tf
 0 0 0 rg
-50 350 Td
+50 264 Td
 (Concesionaria  --  Full Stack) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-65 336 Td
+65 252 Td
 (Aplicacion web para concesionaria de vehiculos con panel administrativo.) Tj
 ET
 BT
 /F1 8 Tf
 0.4 0.4 0.44 rg
-65 322 Td
+65 240 Td
 (Python / Flask / HTML5 / CSS3) Tj
 ET
 BT
-/F2 11 Tf
+/F2 9 Tf
 0 0 0 rg
-50 294 Td
-(Formacion) Tj
-ET
-BT
-/F2 9 Tf
-0.4 0.4 0.44 rg
-50 274 Td
-(2025) Tj
+50 224 Td
+(Fibrolaser  --  Freelance) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-102 274 Td
-(Desarrollo de aplicaciones con IA) Tj
+65 212 Td
+(Sitio web para servicio de corte y grabado laser con catalogo y cotizacion online.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+65 200 Td
+(HTML5 / CSS3 / JavaScript) Tj
 ET
 BT
 /F2 9 Tf
-0.4 0.4 0.44 rg
-50 258 Td
-(2024) Tj
+0 0 0 rg
+50 184 Td
+(Scanner de Vulnerabilidades Web  --  Ciberseguridad) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-102 258 Td
-(Python para desarrollo web) Tj
+65 172 Td
+(Herramienta de analisis de seguridad: headers, CORS, SSL/TLS y cookies.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+65 160 Td
+(Python / Flask / JavaScript) Tj
 ET
 BT
 /F2 9 Tf
-0.4 0.4 0.44 rg
-50 242 Td
-(2024) Tj
+0 0 0 rg
+50 144 Td
+(Dashboard de Auditoria de Seguridad  --  Ciberseguridad) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-102 242 Td
-(HTML y CSS - Frontend) Tj
+65 132 Td
+(Panel para gestionar auditorias de seguridad con puntuacion y reportes.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+65 120 Td
+(Python / Flask / PostgreSQL / JavaScript) Tj
 ET
 BT
 /F2 9 Tf
-0.4 0.4 0.44 rg
-50 226 Td
-(2023) Tj
+0 0 0 rg
+50 104 Td
+(API REST de Inventario  --  API) Tj
 ET
 BT
 /F1 9 Tf
 0.12 0.12 0.13 rg
-102 226 Td
-(Python avanzado) Tj
+65 92 Td
+(API RESTful con JWT, paginacion, filtros y documentacion Swagger.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+65 80 Td
+(Python / Flask / PostgreSQL) Tj
+ET
+BT
+/F2 9 Tf
+0 0 0 rg
+50 64 Td
+(API de Notificaciones Push  --  API) Tj
+ET
+BT
+/F1 9 Tf
+0.12 0.12 0.13 rg
+65 52 Td
+(Backend para suscripciones push, envio en tiempo real con WebSocket.) Tj
+ET
+BT
+/F1 8 Tf
+0.4 0.4 0.44 rg
+65 40 Td
+(Python / Flask / JavaScript) Tj
 ET
 endstream
 endobj
@@ -262,5 +334,5 @@ xref
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-3407
+4827
 %%EOF

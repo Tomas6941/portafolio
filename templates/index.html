@@ -28,6 +28,7 @@
         <li><a href="#hero" aria-current="page">Inicio</a></li>
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experiencia</a></li>
         <li><a href="#projects">Trabajo</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
@@ -79,7 +80,7 @@
           <div class="section-label">Sobre mí</div>
           <h2 class="section-title">Un dev que construye cosas reales.</h2>
           <p>
-            Tengo 15 años y soy desarrollador Full Stack de Córdoba, Argentina.
+            Tengo 16 años y soy desarrollador Full Stack de Córdoba, Argentina.
             Desde temprano me apasionó la programación como herramienta para resolver problemas reales y aprender cómo funcionan los sistemas por dentro.
           </p>
           <p>
@@ -206,6 +207,38 @@
       </div>
     </section>
 
+    <section id="experience">
+      <div class="section-number" data-section="03">03</div>
+      <div class="experience-inner">
+        <div class="experience-header">
+          <div class="section-label">Experiencia</div>
+          <h2 class="section-title">Dónde trabajo.</h2>
+        </div>
+        <div class="experience-list">
+          {% for job in experience %}
+          <div class="experience-card reveal">
+            <div class="experience-current">
+              <span class="experience-dot"></span>
+              Actualmente aquí
+            </div>
+            <div class="experience-top">
+              <a href="{{ job.url }}" target="_blank" rel="noopener" class="experience-company">{{ job.company }}</a>
+              <span class="experience-sep">—</span>
+              <span class="experience-role">{{ job.role }}</span>
+            </div>
+            <div class="experience-period">{{ job.period }} · {{ job.duration }}</div>
+            <p class="experience-desc">{{ job.description }}</p>
+            <div class="experience-tags">
+              {% for tag in job.tags %}
+              <span class="experience-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
     <section id="services">
       <div class="section-number">—</div>
       <div class="services-inner">
@@ -249,7 +282,7 @@
     </section>
 
     <section id="projects">
-      <div class="section-number" data-section="03">03</div>
+      <div class="section-number" data-section="04">04</div>
       <div class="projects-inner">
         <div class="projects-header">
           <div class="section-label">Proyectos</div>
@@ -339,7 +372,7 @@
     </section>
 
     <section id="contact">
-      <div class="section-number" data-section="04">04</div>
+      <div class="section-number" data-section="05">05</div>
       <div class="contact-inner">
         <div class="contact-info">
           <div class="section-label">Contacto</div>

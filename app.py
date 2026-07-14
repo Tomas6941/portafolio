@@ -114,6 +114,17 @@ projects = [
         "demo_url": None
     },
 ]
+experience = [
+    {
+        "company": "Firox",
+        "role": "Frontend Developer",
+        "url": "https://firox.uy",
+        "period": "May 2026 — Actualidad",
+        "duration": "4 meses",
+        "description": "Desarrollo de interfaces web con React, Next.js, TypeScript y Tailwind CSS. Construcción de sitios y tiendas online optimizados para rendimiento y conversión.",
+        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    }
+]
 skills = {
     "Backend": ["Python", "Flask", "Django"],
     "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Tkinter", "CustomTkinter"],
@@ -123,11 +134,11 @@ skills = {
 @app.route("/")
 def index():
     og_image = SITE_URL + url_for('static', filename='og-image.svg')
-    return render_template("index.html", projects=projects, skills=skills, og_image=og_image, site_url=SITE_URL)
+    return render_template("index.html", projects=projects, skills=skills, experience=experience, og_image=og_image, site_url=SITE_URL)
 
 @app.route("/cv")
 def cv():
-    return render_template("cv.html", projects=projects, skills=skills)
+    return render_template("cv.html", projects=projects, skills=skills, experience=experience)
 
 @app.route("/cv-pdf")
 def cv_pdf():

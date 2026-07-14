@@ -572,6 +572,130 @@ section {
 
 .skill-group:hover .skill-item { color: var(--white); }
 
+/* ── EXPERIENCE ── */
+
+#experience { background: var(--bg2); }
+
+.experience-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.experience-header { margin-bottom: 56px; }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+
+.experience-card {
+  background: var(--bg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.experience-card:hover { background: var(--bg2); }
+
+.experience-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4ade80;
+  margin-bottom: 4px;
+  width: fit-content;
+}
+
+.experience-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+}
+
+.experience-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-company {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 0.2s;
+}
+
+.experience-company:hover { color: var(--text-muted); }
+
+.experience-sep {
+  color: var(--text-dim);
+  font-weight: 300;
+}
+
+.experience-role {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.experience-period {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.experience-desc {
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 640px;
+  margin-top: 4px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.experience-tag {
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.experience-card:hover .experience-tag {
+  border-color: var(--text-dim);
+  color: var(--text-muted);
+}
+
 /* ── SERVICES ── */
 
 #services { background: var(--bg2); }
@@ -1136,6 +1260,7 @@ footer {
   .about-timeline { border-left: none; padding-left: 0; }
   .skills-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+  .experience-card { padding: 32px 24px; }
   .project-card { grid-template-columns: 1fr; gap: 12px; }
   .project-num { display: none; }
   .project-filters { gap: 2px; }

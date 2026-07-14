@@ -58,7 +58,7 @@
 </head>
 <body>
   <div class="page">
-    <h1>Tomás</h1>
+    <h1>Tomás González</h1>
     <div class="subtitle">Full Stack Developer</div>
     <div class="contact">
       <span>tg4263340@gmail.com</span>
@@ -69,7 +69,7 @@
 
     <div class="section">
       <h2>Sobre mí</h2>
-      <p>Tengo 15 años y soy desarrollador Full Stack de Córdoba, Argentina. Me apasiona construir aplicaciones web completas desde el backend hasta la interfaz.</p>
+      <p>Tengo 16 años y soy desarrollador Full Stack de Córdoba, Argentina. Me apasiona construir aplicaciones web completas desde el backend hasta la interfaz.</p>
       <p>Me especializo en Python + Flask para backend y HTML, CSS, Tailwind CSS para frontend. Trabajo con bases de datos MySQL, MongoDB y PostgreSQL. He completado cursos de Python avanzado, desarrollo web y aplicaciones con inteligencia artificial.</p>
     </div>
 
@@ -83,6 +83,20 @@
         </div>
         {% endfor %}
       </div>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia Laboral</h2>
+      {% for job in experience %}
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">{{ job.company }} — {{ job.role }}</span>
+        </div>
+        <div style="font-size:8.5pt;color:#888;margin-bottom:2px;">{{ job.period }} · {{ job.duration }}</div>
+        <p class="project-desc">{{ job.description }}</p>
+        <div class="project-tags">{{ job.tags | join(' / ') }}</div>
+      </div>
+      {% endfor %}
     </div>
 
     <div class="section">
