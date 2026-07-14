@@ -61,7 +61,7 @@ projects = [
         "type": "Ciberseguridad",
         "url": "https://github.com/Tomas6941/scanner_vulnerabilidades",
         "color": "#CC3333",
-        "demo_url": null
+        "demo_url": None
     },
     {
         "id": 7,
@@ -71,7 +71,7 @@ projects = [
         "type": "Ciberseguridad",
         "url": "https://github.com/Tomas6941/dashboard-auditoria",
         "color": "#993333",
-        "demo_url": null
+        "demo_url": None
     },
     {
         "id": 8,
@@ -81,7 +81,7 @@ projects = [
         "type": "API",
         "url": "https://github.com/Tomas6941/api_inventario",
         "color": "#336699",
-        "demo_url": null
+        "demo_url": None
     },
     {
         "id": 9,
@@ -91,7 +91,7 @@ projects = [
         "type": "API",
         "url": "https://github.com/Tomas6941/notificaciones_push",
         "color": "#339966",
-        "demo_url": null
+        "demo_url": None
     },
     {
         "id": 10,
@@ -101,7 +101,7 @@ projects = [
         "type": "Escritorio",
         "url": "https://github.com/Tomas6941/sistema_facturacion",
         "color": "#666633",
-        "demo_url": null
+        "demo_url": None
     },
     {
         "id": 11,
@@ -111,7 +111,7 @@ projects = [
         "type": "Escritorio",
         "url": "https://github.com/Tomas6941/gestor_inventario",
         "color": "#996633",
-        "demo_url": null
+        "demo_url": None
     },
 ]
 skills = {
