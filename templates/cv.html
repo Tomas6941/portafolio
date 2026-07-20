@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tomás González — Curriculum Vitae</title>
+  <meta name="description" content="CV de Tomás González, Full Stack Developer especializado en Python, Flask y desarrollo web." />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
     @page { margin: 2cm; size: A4; }
@@ -47,6 +48,7 @@
     .project-type { font-size: 8pt; font-weight: 500; color: #999; text-transform: uppercase; letter-spacing: 0.06em; }
     .project-desc { font-size: 9pt; color: #444; margin-bottom: 2px; }
     .project-tags { font-size: 8pt; color: #aaa; }
+    .project-period { font-size: 8.5pt; color: #888; margin-bottom: 2px; }
     .timeline { display: flex; flex-direction: column; gap: 2px; }
     .timeline-item { display: flex; gap: 12px; font-size: 9.5pt; }
     .timeline-year { font-weight: 600; color: #666; min-width: 36px; }
@@ -57,7 +59,8 @@
   </style>
 </head>
 <body>
-  <div class="page">
+  <main>
+    <div class="page">
     <h1>Tomás González</h1>
     <div class="subtitle">Full Stack Developer</div>
     <div class="contact">
@@ -92,7 +95,7 @@
         <div class="project-header">
           <span class="project-title">{{ job.company }} — {{ job.role }}</span>
         </div>
-        <div style="font-size:8.5pt;color:#888;margin-bottom:2px;">{{ job.period }} · {{ job.duration }}</div>
+        <div class="project-period">{{ job.period }} · {{ job.duration }}</div>
         <p class="project-desc">{{ job.description }}</p>
         <div class="project-tags">{{ job.tags | join(' / ') }}</div>
       </div>
@@ -127,7 +130,7 @@
         <div class="timeline-item"><span class="timeline-year">2023</span><span class="timeline-text">Python avanzado</span></div>
       </div>
     </div>
-  </div>
+  </main>
 
   <button class="print-btn" onclick="window.print()">Imprimir / PDF</button>
 </body>

@@ -4,18 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tomás — Full Stack Developer</title>
-  <meta name="description" content="Desarrollador Full Stack. Python, Flask, HTML, CSS, Tailwind, MySQL, MongoDB." />
+  <meta name="description" content="Desarrollador Full Stack. Python, Flask, HTML, CSS, Tailwind, MySQL, PostgreSQL." />
+  <meta name="theme-color" content="#070708" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)" />
   <meta property="og:title" content="Tomás — Full Stack Developer" />
   <meta property="og:description" content="Desarrollador Full Stack Junior especializado en Python, Flask y desarrollo web." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tomas6941.github.io/portafolio/" />
+  <meta property="og:url" content="{{ site_url }}/" />
   <meta property="og:image" content="{{ og_image }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <noscript><style>body{opacity:1!important}</style></noscript>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
 
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
@@ -47,7 +55,7 @@
     <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <section id="hero">
       <div class="hero-inner">
@@ -58,7 +66,8 @@
             <span class="hero-role"><span class="typing-text"></span><span class="typing-cursor">|</span></span>
           </h1>
           <p class="hero-desc">
-            Especializado en Python, Flask, HTML, CSS y JavaScript.
+            Especializado en Python para resolver problemas y Desarrollo Web para gestionar tu negocio.
+            Empecé a resolver problemas a los 12 años, y desde entonces no paré de aprender y construir cosas nuevas.
             Construyo aplicaciones web completas desde los 14 años.
           </p>
           <div class="hero-cta">
@@ -85,8 +94,8 @@
           </p>
           <p>
             Me especializo en el desarrollo de aplicaciones web
-            utilizando Python y Flask para el backend, y HTML, CSS y Tailwind CSS para el frontend.
-            También trabajo con bases de datos como MySQL, PostgreSQL y MongoDB,
+            utilizando Python y Flask para el backend, y HTML, JS y Tailwind CSS para el frontend.
+            También trabajo con bases de datos como MySQL, PostgreSQL y SupaBase,
             desarrollando aplicaciones seguras, escalables y mantenibles.
           </p>
           <p>
@@ -239,48 +248,6 @@
       </div>
     </section>
 
-    <section id="services">
-      <div class="section-number">—</div>
-      <div class="services-inner">
-        <div class="services-header">
-          <div class="section-label">Servicios</div>
-          <h2 class="section-title">Lo que ofrezco.</h2>
-        </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">⎔</div>
-            <h3 class="service-title">Desarrollo Web</h3>
-            <p class="service-desc">Aplicaciones web completas con enfoque en rendimiento, seguridad y escalabilidad. Desde la idea hasta el despliegue.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">⚙</div>
-            <h3 class="service-title">APIs & Backend</h3>
-            <p class="service-desc">APIs REST con Flask, autenticación JWT, control de acceso, validación de datos y conexión con MySQL, PostgreSQL y MongoDB.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">◈</div>
-            <h3 class="service-title">Frontend</h3>
-            <p class="service-desc">Maquetación con HTML, CSS y Tailwind. Interfaces limpias, responsive y funcionales.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">⎔</div>
-            <h3 class="service-title">Bases de Datos</h3>
-            <p class="service-desc">Diseño e implementación de bases relacionales MySQL, PostgresSQL y no relacionales MongoDB.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🛡</div>
-              <h3 class="service-title">Ciberseguridad</h3>
-              <p class="service-desc">Análisis básico de vulnerabilidades, auditorías de aplicaciones web, revisión de configuraciones y aplicación de buenas prácticas de desarrollo seguro.</p>
-          </div>
-          <div class="service-card"> 
-            <div class="service-icon">🖥</div> 
-            <h3 class="service-title">Aplicaciones de Escritorio</h3> 
-            <p class="service-desc">Desarrollo de aplicaciones de escritorio que funcionan de forma local, ideales para gestión de stock, clientes, ventas y automatización de procesos sin depender de Internet.</p> 
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="projects">
       <div class="section-number" data-section="04">04</div>
       <div class="projects-inner">
@@ -311,6 +278,9 @@
                      loading="lazy"
                      width="640"
                      height="360"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Ampliar imagen de {{ project.title }}"
                      onerror="this.src='{{ url_for('static', filename='images/proyecto' ~ loop.index ~ '.svg') }}'" />
               </div>
               <p class="project-desc">{{ project.description }}</p>
@@ -338,39 +308,6 @@
       </div>
     </section>
 
-    <section id="testimonials">
-      <div class="section-number">✦</div>
-      <div class="testimonials-inner">
-        <div class="testimonials-header">
-          <div class="section-label">Testimonios</div>
-          <h2 class="section-title">Lo que dicen.</h2>
-        </div>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">"Muy responsable y comprometido con el proyecto. Entregó todo en tiempo y forma."</p>
-            <footer class="testimonial-author">
-              <span class="testimonial-name">Cliente</span>
-              <span class="testimonial-role">Proyecto freelance</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">"Demostró una gran capacidad técnica para su edad. Sabe resolver problemas complejos."</p>
-            <footer class="testimonial-author">
-              <span class="testimonial-name">Profesor de programación</span>
-              <span class="testimonial-role">Curso Python avanzado</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">"Tiene una visión clara de lo que quiere construir. Es un placer trabajar con él."</p>
-            <footer class="testimonial-author">
-              <span class="testimonial-name">Compañero</span>
-              <span class="testimonial-role">Proyecto colaborativo</span>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
     <section id="contact">
       <div class="section-number" data-section="05">05</div>
       <div class="contact-inner">
@@ -385,7 +322,7 @@
             <a href="https://www.linkedin.com/in/tomas-gonzalez-724518307/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
             <a href="mailto:tg4263340@gmail.com" class="social-link">Email</a>
           </div>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+          <div class="contact-buttons">
             <a href="{{ url_for('static', filename='cv.pdf') }}" class="btn-outline" download>Descargar CV</a>
             <a href="/cv" class="btn-outline" target="_blank">Ver online</a>
           </div>
@@ -393,15 +330,15 @@
         <form class="contact-form" id="contact-form" action="#" method="post">
           <div class="form-field">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
           </div>
           <div class="form-field">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
           </div>
           <div class="form-field">
             <label for="message">Mensaje</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Contame sobre tu proyecto..." required></textarea>
           </div>
           <button type="submit" class="form-submit">
             Enviar
@@ -414,7 +351,7 @@
   </main>
 
   <footer>
-    <p class="footer-copy">© 2026 <span>Tomás</span></p>
+    <p class="footer-copy">&copy; {{ current_year }} <span>Tomás</span></p>
     <p class="footer-made">Python + Flask</p>
   </footer>
 

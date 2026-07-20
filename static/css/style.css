@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 [data-theme="dark"] {
   --bg:          #070708;
   --bg2:         #0b0b0d;
@@ -8,7 +6,7 @@
   --border-soft: #18181a;
   --text:        #e8e8ea;
   --text-muted:  #88889a;
-  --text-dim:    #555566;
+  --text-dim:    #757589;
   --white:       #ffffff;
   --overlay:     rgba(0,0,0,0.97);
 }
@@ -21,7 +19,7 @@
   --border-soft: #e0e0e0;
   --text:        #111113;
   --text-muted:  #5a5a6a;
-  --text-dim:    #9a9aaa;
+  --text-dim:    #6a6a7a;
   --white:       #111113;
   --overlay:     rgba(255,255,255,0.97);
 }
@@ -55,7 +53,31 @@ body a, body button, body input, body textarea, body label, body nav, body .nav-
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
+html { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+
 ::selection { background: var(--text); color: var(--bg); }
+
+/* ── SKIP LINK ── */
+
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 12px 24px;
+  background: var(--white);
+  color: var(--bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus { top: 16px; }
+
+/* ── CONTACT BUTTONS ── */
+
+.contact-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
 
 /* ── NOISE OVERLAY ── */
 
@@ -114,10 +136,7 @@ body:active .cursor-ring {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-a:hover ~ .cursor-ring,
-button:hover ~ .cursor-ring,
-.project-link:hover ~ .cursor-ring,
-.social-link:hover ~ .cursor-ring {
+.cursor-ring.expanded {
   width: 40px; height: 40px;
   border-color: var(--white);
   background: rgba(255, 255, 255, 0.05);
@@ -431,6 +450,12 @@ section {
 }
 
 .about-text p strong { color: var(--text); font-weight: 500; }
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
 .about-stats {
   display: flex;
@@ -939,62 +964,6 @@ section {
 .project-card:hover .project-link { color: var(--white); gap: 12px; }
 .project-card:hover .project-link svg { opacity: 1; transform: translateX(2px); }
 
-/* ── TESTIMONIALS ── */
-
-#testimonials { background: var(--bg); }
-
-.testimonials-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.testimonials-header { margin-bottom: 56px; }
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border);
-}
-
-.testimonial-card {
-  background: var(--bg2);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  border: none;
-  margin: 0;
-}
-
-.testimonial-text {
-  font-size: 0.92rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  line-height: 1.7;
-  font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.testimonial-name {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.testimonial-role {
-  font-size: 0.72rem;
-  font-weight: 400;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
 /* ── CONTACT ── */
 
 #contact { background: var(--bg); }
@@ -1219,7 +1188,6 @@ footer {
   .hero-visual { display: none; }
   .hero-text { max-width: 100%; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 900px) {
@@ -1265,13 +1233,24 @@ footer {
   .project-num { display: none; }
   .project-filters { gap: 2px; }
   .filter-btn { padding: 6px 14px; font-size: 0.72rem; }
-  .testimonials-grid { grid-template-columns: 1fr; }
   .lightbox { padding: 24px; }
   .lightbox-close { top: 12px; right: 12px; }
   .contact-inner { grid-template-columns: 1fr; gap: 48px; }
   .back-to-top { bottom: 20px; right: 20px; width: 38px; height: 38px; }
   footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
 }
+
+/* ── REDUCED MOTION ── */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── FOCUS ── */
 
 a:focus,
 button:focus,

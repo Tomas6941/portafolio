@@ -1,0 +1,188 @@
+Información real extraída de app.py e index.html para elaborar el CV.
+
+---
+
+# TOMÁS GONZÁLEZ
+
+**Full Stack Developer | Python • Flask • JavaScript • PostgreSQL**
+
+📍 Córdoba, Argentina
+📧 tg4263340@gmail.com
+🌐 tomas6941.github.io/portafolio
+💻 github.com/Tomas6941
+💼 linkedin.com/in/tomas-gonzalez-724518307
+
+---
+
+## Perfil
+
+Desarrollador Full Stack de 16 años, especializado en Python, Flask y desarrollo web moderno. Empecé a resolver problemas a los 12 años y construyo aplicaciones web completas desde los 14. Actualmente trabajo como Frontend Developer en Firox, desarrollando interfaces con React, Next.js, TypeScript y Tailwind CSS. Me interesa la ciberseguridad, el hacking ético y la construcción de software seguro.
+
+---
+
+## Experiencia
+
+### Frontend Developer — Firox
+May 2026 — Actualidad (4 meses)
+https://firox.uy
+
+Desarrollo de interfaces web con React, Next.js, TypeScript y Tailwind CSS. Construcción de sitios y tiendas online optimizados para rendimiento y conversión.
+
+Tags: React, Next.js, TypeScript, Tailwind CSS
+
+---
+
+## Tecnologías
+
+**Backend**
+* Python
+* Flask
+* Django
+* Node.js
+* FastAPI
+
+**Frontend**
+* HTML5
+* CSS3
+* Tailwind CSS
+* Bootstrap
+* JavaScript
+* React
+* Tkinter
+* CustomTkinter
+
+**Bases de datos**
+* MySQL
+* SupaBase
+* SQLite
+* PostgreSQL
+
+**Herramientas**
+* Git
+* GitHub
+* Linux
+* VS Code
+* OpenCode
+* Vercel
+* Render
+* Cloudflare
+
+---
+
+## Proyectos Destacados
+
+### 01 — SaaS de Inmobiliaria
+**Full Stack · HTML5 · CSS3 · JavaScript**
+Plataforma web para una inmobiliaria con catálogo de propiedades y formulario de contacto. Panel administrativo para gestionar propiedades.
+Código: https://github.com/Tomas6941/pinmobiliaria
+Demo: https://proyectoinmobiliaria-demo.vercel.app/
+
+### 02 — Clínica Dental
+**Full Stack · Python · Flask · HTML5 · CSS3**
+Sitio web para clínica dental con sistema de reserva de turnos y panel de administración.
+Código: https://github.com/Tomas6941/pdental
+Demo: https://proyectoodontologo-demo.vercel.app/
+
+### 03 — Barbería Elite
+**Full Stack · HTML5 · CSS3 · JavaScript**
+Sitio web para una barbería con sistema de reserva de turnos y panel de administración.
+Código: https://github.com/Tomas6941/pbarberia
+Demo: https://proyectobarberia-demo.vercel.app/
+
+### 04 — Concesionaria
+**Full Stack · Python · Flask · HTML5 · CSS3**
+Aplicación web para concesionaria de vehículos, incluye panel administrativo para gestionar catálogo.
+Código: https://github.com/Tomas6941/concesionaria
+Demo: https://proyectoconcesionaria-demo.vercel.app/
+
+### 05 — Fibrolaser (Freelance)
+**Freelance · HTML5 · CSS3 · JavaScript**
+Trabajo freelance: desarrollo web para un servicio de corte y grabado láser, con catálogo de trabajos y cotización online.
+Código: https://github.com/Tomas6941/fibrolaser
+Demo: https://fibrolaser.vercel.app/
+
+### 06 — Scanner de Vulnerabilidades Web
+**Ciberseguridad · Python · Flask · JavaScript**
+Herramienta de análisis de seguridad web que verifica headers de seguridad, configuración CORS, certificados SSL/TLS y cookies, generando un reporte detallado con puntuación y recomendaciones.
+Código: https://github.com/Tomas6941/scanner_vulnerabilidades
+
+### 07 — Dashboard de Auditoría de Seguridad
+**Ciberseguridad · Python · Flask · PostgreSQL · JavaScript**
+Panel administrativo para gestionar auditorías de seguridad de sitios web, con puntuación, historial, recomendaciones priorizadas y exportación de reportes.
+Código: https://github.com/Tomas6941/dashboard-auditoria
+
+### 08 — API REST de Gestión de Inventario
+**API · Python · Flask · PostgreSQL**
+API RESTful completa para gestionar inventario de productos con autenticación JWT, paginación, filtros, ordenamiento y documentación automática con Swagger.
+Código: https://github.com/Tomas6941/api_inventario
+
+### 09 — API de Notificaciones Push
+**API · Python · Flask · JavaScript**
+Backend completo para gestionar suscripciones a notificaciones push, envío en tiempo real con WebSocket e historial de notificaciones enviadas.
+Código: https://github.com/Tomas6941/notificaciones_push
+
+### 10 — Sistema de Facturación
+**Escritorio · Python · CustomTkinter · PostgreSQL**
+Aplicación de escritorio para emitir facturas, gestionar productos y clientes, calcular impuestos y generar reportes de ventas en PDF.
+Código: https://github.com/Tomas6941/sistema_facturacion
+
+### 11 — Gestor de Inventario
+**Escritorio · Python · CustomTkinter · SQLite**
+Aplicación de escritorio para gestionar inventario de un negocio con control de stock, alertas de stock mínimo y reportes de movimientos.
+Código: https://github.com/Tomas6941/gestor_inventario
+
+---
+
+## Formación
+
+**Técnico en Desarrollo de Software** *(En curso)*
+Escuela ProA – Córdoba
+
+---
+
+## Formación Complementaria (Cursos)
+
+* 2026 — Ciberseguridad y privacidad
+* 2026 — Seguridad en Internet
+* 2025 — PostgreSQL
+* 2025 — Desarrollo de aplicaciones con IA
+* 2024 — Python para desarrollo web
+* 2024 — HTML y CSS — Frontend
+* 2023 — Desarrollo de aplicaciones de escritorio con Python
+* 2023 — Python avanzado
+
+---
+
+## Servicios
+
+* Desarrollo Web — Aplicaciones web completas con enfoque en rendimiento, seguridad y escalabilidad.
+* APIs & Backend — APIs REST con Flask, autenticación JWT, control de acceso, validación de datos.
+* Frontend — Maquetación con HTML, CSS y Tailwind. Interfaces limpias, responsive y funcionales.
+* Bases de Datos — Diseño e implementación de bases relacionales (MySQL, PostgreSQL) y no relacionales (MongoDB).
+* Ciberseguridad — Análisis de vulnerabilidades, auditorías de aplicaciones web, revisión de configuraciones.
+* Aplicaciones de Escritorio — Aplicaciones locales para gestión de stock, clientes, ventas y automatización.
+
+---
+
+## Estadísticas
+
+* 10+ Proyectos
+* 7+ Cursos completados
+* 5 Apps Flask
+* Empecé a los 12 años
+
+---
+
+## Sobre mí
+
+Tengo 16 años y soy desarrollador Full Stack de Córdoba, Argentina. Desde temprano me apasionó la programación como herramienta para resolver problemas reales y aprender cómo funcionan los sistemas por dentro.
+
+Me especializo en el desarrollo de aplicaciones web utilizando Python y Flask para el backend, y HTML, JS y Tailwind CSS para el frontend. También trabajo con bases de datos como MySQL, PostgreSQL y SupaBase, desarrollando aplicaciones seguras, escalables y mantenibles.
+
+Además, me interesa el área de la ciberseguridad y el hacking ético. Estudio análisis de vulnerabilidades, pentesting de aplicaciones, seguridad en redes y buenas prácticas de desarrollo seguro. Utilizo herramientas y metodologías orientadas a identificar, comprender y reportar vulnerabilidades de forma responsable, siempre con fines educativos y de mejora de la seguridad.
+
+---
+
+## Datos de contacto (para el formulario WhatsApp)
+
+Número WhatsApp: 5493517962251

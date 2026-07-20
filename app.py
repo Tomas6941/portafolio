@@ -1,12 +1,13 @@
 from flask import Flask, render_template, send_from_directory, url_for
+from datetime import datetime
 import os
 app = Flask(__name__)
 SITE_URL = os.environ.get("SITE_URL", "https://tomas6941.github.io/portafolio")
 projects = [
     {
         "id": 1,
-        "title": "SaaS de Inmobiliaria",
-        "description": "Plataforma web para una inmobiliaria con catálogo de propiedades y formulario de contacto. Panel administrativo para gestionar propiedades, etc.",
+        "title": "Web para gestión de Inmobiliaria",
+        "description": "Plataforma web para una inmobiliaria con catálogo de propiedades, formulario de contacto y panel administrativo para gestionar propiedades.",
         "tags": ["HTML5", "CSS3", "JavaScript"],
         "type": "Full Stack",
         "url": "https://github.com/Tomas6941/pinmobiliaria",
@@ -36,7 +37,7 @@ projects = [
     {
         "id": 4,
         "title": "Concesionaria",
-        "description": "Aplicación web para concesionaria de vehículos, incluye panel administrativo para gestionar catalogo, etc.",
+        "description": "Aplicación web para concesionaria de vehículos con panel administrativo para gestionar el catálogo.",
         "tags": ["Python", "Flask", "HTML5", "CSS3"],
         "type": "Full Stack",
         "url": "https://github.com/Tomas6941/concesionaria",
@@ -126,15 +127,15 @@ experience = [
     }
 ]
 skills = {
-    "Backend": ["Python", "Flask", "Django"],
-    "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Tkinter", "CustomTkinter"],
-    "Bases de datos": ["MySQL", "MongoDB", "SQLite", "PostgreSQL"],
-    "Herramientas": ["Git", "GitHub", "VS Code", "OpenCode", "Vercel", "Linux"],
+    "Backend": ["Python", "Flask", "Django", "Node.js", "FastAPI"],
+    "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "JavaScript", "React", "Tkinter", "CustomTkinter"],
+    "Bases de datos": ["MySQL", "SupaBase", "SQLite", "PostgreSQL"],
+    "Herramientas": ["Git", "GitHub", "Linux", "VS Code", "OpenCode", "Vercel", "Render", "Cloudflare"],
 }
 @app.route("/")
 def index():
     og_image = SITE_URL + url_for('static', filename='og-image.svg')
-    return render_template("index.html", projects=projects, skills=skills, experience=experience, og_image=og_image, site_url=SITE_URL)
+    return render_template("index.html", projects=projects, skills=skills, experience=experience, og_image=og_image, site_url=SITE_URL, current_year=datetime.now().year)
 
 @app.route("/cv")
 def cv():
@@ -149,4 +150,4 @@ def not_found(e):
     return render_template("404.html"), 404
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=os.environ.get("FLASK_DEBUG", "false").lower() == "true")
