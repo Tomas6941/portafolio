@@ -1,13 +1,14 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#070708"/>
-  <rect x="0" y="0" width="1200" height="630" fill="url(#noise)" opacity="0.035" style="mix-blend-mode:overlay"/>
-  <defs>
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-    </filter>
-  </defs>
-  <text x="80" y="280" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="96" font-weight="800" fill="#ffffff" letter-spacing="-0.04em">Tomás.</text>
-  <text x="80" y="360" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#88889a" letter-spacing="-0.02em">Full Stack Developer</text>
-  <line x1="80" y1="410" x2="360" y2="410" stroke="#1e1e20" stroke-width="2"/>
-  <text x="80" y="460" font-family="Inter, 'Helvetica Neue', sans-serif" font-size="22" font-weight="400" fill="#555566">Python · Flask · HTML · CSS · JavaScript</text>
+  <rect width="1200" height="630" fill="#171717"/>
+  <path d="M835 0h365v630H835z" fill="#34312D"/>
+  <path d="M890 0v630M1140 0v630" stroke="#D6C5A5" stroke-opacity=".18"/>
+  <circle cx="1015" cy="315" r="132" fill="none" stroke="#D6C5A5" stroke-opacity=".32"/>
+  <circle cx="1015" cy="315" r="110" fill="none" stroke="#A34F36" stroke-width="2"/>
+  <text x="1015" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="86" fill="#D6C5A5">T</text>
+  <text x="80" y="105" font-family="monospace" font-size="18" letter-spacing="5" fill="#A34F36">SOFTWARE PORTFOLIO · CÓRDOBA, ARGENTINA</text>
+  <text x="76" y="260" font-family="Georgia,serif" font-size="78" fill="#F2EEE5">THE DEVELOPER'S</text>
+  <text x="76" y="350" font-family="Georgia,serif" font-size="92" font-style="italic" fill="#D6C5A5">KITCHEN</text>
+  <line x1="80" y1="405" x2="680" y2="405" stroke="#D6C5A5" stroke-opacity=".35"/>
+  <text x="80" y="465" font-family="Arial,sans-serif" font-size="26" fill="#B6AFA2">Tomás González · Full Stack Developer</text>
+  <text x="80" y="520" font-family="monospace" font-size="16" letter-spacing="3" fill="#899078">DISEÑO · CÓDIGO · PROPÓSITO</text>
 </svg>

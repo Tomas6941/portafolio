@@ -12,62 +12,6 @@
     initTyping();
   });
 
-  // ── CUSTOM CURSOR ──
-
-  var dot = document.querySelector('.cursor-dot');
-  var ring = document.querySelector('.cursor-ring');
-  var useCursor = !window.matchMedia('(max-width: 900px)').matches;
-
-  var mouseX = 0, mouseY = 0;
-  var ringX = 0, ringY = 0;
-  var ringAnimId = null;
-  var ringIdle = true;
-
-  function animateRing() {
-    ringX += (mouseX - ringX) * 0.15;
-    ringY += (mouseY - ringY) * 0.15;
-    ring.style.left = ringX + 'px';
-    ring.style.top = ringY + 'px';
-
-    var dx = Math.abs(mouseX - ringX);
-    var dy = Math.abs(mouseY - ringY);
-
-    if (dx < 0.5 && dy < 0.5) {
-      if (!ringIdle) {
-        ringIdle = true;
-        ringAnimId = null;
-      }
-      return;
-    }
-
-    ringIdle = false;
-    ringAnimId = requestAnimationFrame(animateRing);
-  }
-
-  if (useCursor && dot && ring) {
-    document.addEventListener('mousemove', function (e) {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      dot.style.left = mouseX + 'px';
-      dot.style.top = mouseY + 'px';
-
-      if (ringIdle && ringAnimId === null) {
-        ringIdle = false;
-        ringAnimId = requestAnimationFrame(animateRing);
-      }
-    }, { passive: true });
-  }
-
-  // ── CURSOR HOVER EXPANSION ──
-
-  if (useCursor && ring) {
-    var hoverTargets = document.querySelectorAll('a, button, .project-link, .social-link, .filter-btn, .project-preview img');
-    hoverTargets.forEach(function (el) {
-      el.addEventListener('mouseenter', function () { ring.classList.add('expanded'); });
-      el.addEventListener('mouseleave', function () { ring.classList.remove('expanded'); });
-    });
-  }
-
   // ── SCROLL COALESCING ──
 
   var ticking = false;
@@ -177,10 +121,8 @@
   }
 
   var savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
+  if (savedTheme === 'dark' || savedTheme === 'light') {
     htmlEl.setAttribute('data-theme', savedTheme);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-    htmlEl.setAttribute('data-theme', 'light');
   }
 
   if (themeToggle) {
@@ -334,55 +276,6 @@
     el.dataset.target = el.textContent.trim();
     el.textContent = '0';
     counterObserver.observe(el);
-  });
-
-  // ── MOUSE PARALLAX ON HERO SHAPE ──
-
-  var heroShape = document.querySelector('.hero-shape');
-  if (heroShape && !prefersReducedMotion) {
-    heroShape.style.transition = 'transform 0.1s ease-out';
-    document.addEventListener('mousemove', function (e) {
-      var rect = heroShape.getBoundingClientRect();
-      var cx = rect.left + rect.width / 2;
-      var cy = rect.top + rect.height / 2;
-      var dx = (e.clientX - cx) / 30;
-      var dy = (e.clientY - cy) / 30;
-      heroShape.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
-    }, { passive: true });
-  }
-
-  // ── MAGNETIC BUTTONS ──
-
-  if (!prefersReducedMotion) {
-    document.querySelectorAll('.btn-primary, .btn-outline, .form-submit').forEach(function (btn) {
-      btn.addEventListener('mousemove', function (e) {
-        var rect = btn.getBoundingClientRect();
-        var dx = e.clientX - (rect.left + rect.width / 2);
-        var dy = e.clientY - (rect.top + rect.height / 2);
-        var dist = Math.sqrt(dx * dx + dy * dy);
-        var strength = Math.min(dist / 4, 8);
-        var angle = Math.atan2(dy, dx);
-        btn.style.transform = 'translate(' + (Math.cos(angle) * strength) + 'px, ' + (Math.sin(angle) * strength) + 'px)';
-        btn.style.transition = 'transform 0.08s ease-out';
-      });
-
-      btn.addEventListener('mouseleave', function () {
-        btn.style.transform = 'translate(0, 0)';
-        btn.style.transition = 'transform 0.3s ease';
-      });
-    });
-  }
-
-  // ── PROJECT CARD HOVER GLOW ──
-
-  document.querySelectorAll('.project-card').forEach(function (card) {
-    card.addEventListener('mousemove', function (e) {
-      var rect = card.getBoundingClientRect();
-      var x = e.clientX - rect.left;
-      var y = e.clientY - rect.top;
-      card.style.setProperty('--mx', x + 'px');
-      card.style.setProperty('--my', y + 'px');
-    });
   });
 
   // ── PROJECT FILTERS ──
