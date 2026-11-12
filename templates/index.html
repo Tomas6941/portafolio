@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tomás — Full Stack Developer</title>
+  <title>THE DEVELOPER'S KITCHEN — Tomás González</title>
   <meta name="description" content="Desarrollador Full Stack. Python, Flask, HTML, CSS, Tailwind, MySQL, PostgreSQL." />
-  <meta name="theme-color" content="#070708" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)" />
-  <meta property="og:title" content="Tomás — Full Stack Developer" />
+  <meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#e8dfcf" media="(prefers-color-scheme: light)" />
+  <meta property="og:title" content="THE DEVELOPER'S KITCHEN — Tomás González" />
   <meta property="og:description" content="Desarrollador Full Stack Junior especializado en Python, Flask y desarrollo web." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site_url }}/" />
@@ -17,7 +17,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
   <noscript><style>body{opacity:1!important}</style></noscript>
 </head>
@@ -26,19 +26,17 @@
   <a href="#main-content" class="skip-link">Saltar al contenido</a>
 
   <div class="noise" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
 
   <header>
     <nav aria-label="Navegación principal">
-      <a class="nav-logo" href="#hero">T<span>.</span></a>
+      <a class="nav-logo" href="#hero" aria-label="The Developer's Kitchen, portfolio de desarrollador"><span class="nav-logo-name">THE DEVELOPER'S<br>KITCHEN</span><span class="nav-logo-mark">TG</span><span class="nav-logo-role">SOFTWARE<br>DEVELOPER</span></a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#hero" aria-current="page">Inicio</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#projects">Trabajo</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#hero" aria-current="page"><span>01</span> La entrada</a></li>
+        <li><a href="#about"><span>02</span> El chef</a></li>
+        <li><a href="#skills"><span>03</span> La despensa</a></li>
+        <li><a href="#experience"><span>04</span> Trayectoria</a></li>
+        <li><a href="#projects"><span>05</span> La carta</a></li>
+        <li><a href="#contact"><span>06</span> Reservaciones</a></li>
       </ul>
       <div class="nav-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
@@ -58,36 +56,33 @@
   <main id="main-content">
 
     <section id="hero">
+      <div class="hero-backdrop" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-text">
           <h1 class="hero-title">
-            <span class="hero-greeting">Hola, soy</span>
-            <span class="hero-name">Tomás.</span>
+            <span class="hero-kicker">SOFTWARE PORTFOLIO <span>· CÓRDOBA, ARGENTINA</span></span>
+            <span class="hero-name">THE DEVELOPER'S<br><em>KITCHEN</em></span>
             <span class="hero-role"><span class="typing-text"></span><span class="typing-cursor">|</span></span>
           </h1>
-          <p class="hero-desc">
-            Especializado en Python para resolver problemas y Desarrollo Web para gestionar tu negocio.
-            Empecé a resolver problemas a los 12 años, y desde entonces no paré de aprender y construir cosas nuevas.
-            Construyo aplicaciones web completas desde los 14 años.
-          </p>
+          <p class="hero-lead">Transformo ideas en soluciones digitales. Cada proyecto tiene su receta, cada línea de código tiene su propósito.</p>
+          <p class="hero-desc">Especializado en Python para resolver problemas y desarrollo web para gestionar tu negocio. Empecé a resolver problemas a los 12 años, y desde entonces no paré de aprender y construir cosas nuevas. Construyo aplicaciones web completas desde los 14 años.</p>
+          <div class="availability"><span class="availability-dot"></span> Disponible para proyectos freelance</div>
           <div class="hero-cta">
-            <a href="#projects" class="btn-primary">Ver trabajo</a>
-            <a href="#contact" class="btn-outline">Contactar</a>
-            <a href="{{ url_for('static', filename='cv.pdf') }}" class="btn-outline" download>Descargar CV</a>
+            <a href="#projects" class="btn-primary">Explorar la carta <span aria-hidden="true">↗</span></a>
+            <a href="#contact" class="btn-outline">Reservar una conversación</a>
+            <a href="{{ url_for('static', filename='cv.pdf') }}" class="hero-cv" download>Ver perfil de desarrollador <span>↓ CV</span></a>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-shape"></div>
-        </div>
+        <div class="hero-caption"><span>DISEÑO · CÓDIGO · PROPÓSITO</span><a class="photo-credit" href="https://unsplash.com/photos/chef-cooking-in-a-professional-kitchen-at-night-oQxFV87QLpg" target="_blank" rel="noopener">Fotografía: Eugeniya Belova / Unsplash</a></div>
       </div>
     </section>
 
     <section id="about">
-      <div class="section-number" data-section="01">01</div>
+      <div class="section-number" data-section="02">02</div>
       <div class="about-inner">
         <div class="about-text">
-          <div class="section-label">Sobre mí</div>
-          <h2 class="section-title">Un dev que construye cosas reales.</h2>
+          <div class="section-label">02 / El chef</div>
+          <h2 class="section-title">BEHIND THE KITCHEN</h2>
           <p>
             Tengo 16 años y soy desarrollador Full Stack de Córdoba, Argentina.
             Desde temprano me apasionó la programación como herramienta para resolver problemas reales y aprender cómo funcionan los sistemas por dentro.
@@ -195,11 +190,11 @@
     </section>
 
     <section id="skills">
-      <div class="section-number" data-section="02">02</div>
+      <div class="section-number" data-section="03">03</div>
       <div class="skills-inner">
         <div class="skills-header">
-          <div class="section-label">Tecnologías</div>
-          <h2 class="section-title">Stack.</h2>
+          <div class="section-label">03 / La despensa</div>
+          <h2 class="section-title">Herramientas listas para crear.</h2>
         </div>
         <div class="skills-grid">
           {% for category, items in skills.items() %}
@@ -217,11 +212,11 @@
     </section>
 
     <section id="experience">
-      <div class="section-number" data-section="03">03</div>
+      <div class="section-number" data-section="04">04</div>
       <div class="experience-inner">
         <div class="experience-header">
-          <div class="section-label">Experiencia</div>
-          <h2 class="section-title">Dónde trabajo.</h2>
+          <div class="section-label">04 / Trayectoria</div>
+          <h2 class="section-title">Experiencia en cocina.</h2>
         </div>
         <div class="experience-list">
           {% for job in experience %}
@@ -249,11 +244,11 @@
     </section>
 
     <section id="projects">
-      <div class="section-number" data-section="04">04</div>
+      <div class="section-number" data-section="05">05</div>
       <div class="projects-inner">
         <div class="projects-header">
-          <div class="section-label">Proyectos</div>
-          <h2 class="section-title">Lo que construí.</h2>
+          <div class="section-label">05 / La carta</div>
+          <h2 class="section-title">Proyectos hechos a medida.</h2>
         </div>
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">Todos</button>
@@ -268,7 +263,7 @@
           {% for project in projects %}
           {% set tags_lower = project.tags | map('lower') | list %}
           <article class="project-card" data-tags="{{ tags_lower | join(',') }}" data-type="{{ project.type | lower }}">
-            <div class="project-num">{{ "%02d" % loop.index }}</div>
+            <div class="project-num"><span>PLATO</span>{{ "%02d" % loop.index }}</div>
             <div class="project-content">
               <div class="project-type">{{ project.type }}</div>
               <h3 class="project-title">{{ project.title }}</h3>
@@ -309,11 +304,11 @@
     </section>
 
     <section id="contact">
-      <div class="section-number" data-section="05">05</div>
+      <div class="section-number" data-section="06">06</div>
       <div class="contact-inner">
         <div class="contact-info">
-          <div class="section-label">Contacto</div>
-          <h2 class="section-title">Hablemos.</h2>
+          <div class="section-label">06 / Reservaciones</div>
+          <h2 class="section-title">LET'S CREATE SOMETHING TOGETHER</h2>
           <p class="contact-desc">
             Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales.
           </p>
@@ -351,7 +346,7 @@
   </main>
 
   <footer>
-    <p class="footer-copy">&copy; {{ current_year }} <span>Tomás</span></p>
+    <p class="footer-copy">&copy; {{ current_year }} <span>Tomás González</span></p>
     <p class="footer-made">Python + Flask</p>
   </footer>
 
